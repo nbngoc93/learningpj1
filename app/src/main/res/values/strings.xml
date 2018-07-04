@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="kangaroo">Kangaroo</string>
+    <string name="login_hint">Tên đăng nhập/Số điện thoại</string>
+    <string name="pasword_hint">Mật khẩu</string>
+    <string name="loginbt_string">Đăng nhập</string>
+    <string name="btoffline_string">Chế độ Offline</string>
+    <string name="loss_password">Quên Mật Khẩu?</string>
+    <string name="great_new_acc">Tạo tài khoản mới</string>
+    <string name="verify_account">Xác thực tài khoản mới</string>
+    <string name="tutoirial">Sử dụng tài khoản \"demo\" với mật khẩu \"demo\" để xem ứng dụng.</string>
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/button_group_top"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_help_outline_black_48dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_phone_black_48dp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flag_cambodia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/button_group_top">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_logo_kangaroo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kangaroo"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_gray">
+
+
+                <include layout="@layout/button_country_pick_layout" />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/Account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="2"
+                android:background="@drawable/border_gray"
+                android:hint="@string/login_hint"
+                android:padding="8dp"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border_gray">
+
+            <include layout="@layout/enter_password_layout"></include>
+        </FrameLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Lưu ThôngTin" />
+
+        <Button
+            android:onClick="onBtlogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#60bb46"
+            android:text="@string/loginbt_string"
+            android:textColor="#ffffff"
+            android:textStyle="normal" />
+
+        <Button
+            android:onClick="onBtoffline"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#60bb46"
+            android:text="@string/btoffline_string"
+            android:textColor="#ffffff"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:onClick="onForgotpass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/loss_password"
+                android:textAlignment="textEnd"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="|"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:onClick="onCreatacc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/great_new_acc"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:onClick="onVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_account"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tutoirial"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
