@@ -85,7 +85,7 @@
             </FrameLayout>
 
             <EditText
-                android:id="@+id/Account"
+                android:id="@+id/account"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
