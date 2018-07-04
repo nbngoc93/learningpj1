@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onForgotpass(View view) {
-        onBtlogin(view);
+        onVerify(view);
     }
 
     public void onCreatacc(View view) {
